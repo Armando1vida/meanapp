@@ -50,7 +50,7 @@ module.exports = function (app, passport, db) {
     app.engine('html', consolidate[config.templateEngine]);
 
     // set .html as the default extension
-    app.set('view engine', 'hyml');
+    app.set('view engine', 'html');
 
     // The cookieParser should be above session
     app.use(cookieParser());
